@@ -1,0 +1,83 @@
+[
+  {
+    "id": "2",
+    "name": "Game",
+    "type": "scene"
+  },
+  {
+    "id": "5",
+    "name": "GameSprites",
+    "type": null,
+    "children": [
+      {
+        "id": "10",
+        "name": "background",
+        "type": "sprite"
+      },
+      {
+        "id": "12",
+        "name": "pad1",
+        "type": "sprite"
+      },
+      {
+        "id": "11",
+        "name": "pad2",
+        "type": "sprite"
+      },
+      {
+        "id": "13",
+        "name": "ball",
+        "type": "sprite"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "GameScripts",
+    "type": null,
+    "children": [
+      {
+        "id": "15",
+        "name": "Global",
+        "type": "script"
+      },
+      {
+        "id": "14",
+        "name": "Ball",
+        "type": "script"
+      },
+      {
+        "id": "16",
+        "name": "Paddles",
+        "type": "script"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "GameSounds",
+    "type": null,
+    "children": [
+      {
+        "id": "17",
+        "name": "tac",
+        "type": "sound"
+      },
+      {
+        "id": "18",
+        "name": "toc",
+        "type": "sound"
+      },
+      {
+        "id": "19",
+        "name": "tada",
+        "type": "sound"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Font",
+    "type": "font"
+  }
+]
