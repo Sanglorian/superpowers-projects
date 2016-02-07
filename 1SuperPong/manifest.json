@@ -1,7 +1,7 @@
 {
   "id": "wQbd",
-  "name": "PongTutorial",
-  "description": "",
+  "name": "Super Pong",
+  "description": "Pong Tutorial",
   "systemId": "game",
   "formatVersion": 5
 }
