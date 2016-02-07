@@ -109,6 +109,31 @@
             "shaderAssetId": null
           },
           "id": "0"
+        },
+        {
+          "type": "ArcadeBody2D",
+          "config": {
+            "type": "box",
+            "movable": true,
+            "width": 0.2,
+            "height": 0.2,
+            "offset": {
+              "x": 0,
+              "y": 0
+            },
+            "tileMapAssetId": null,
+            "tileSetPropertyName": null,
+            "layersIndex": null
+          },
+          "id": "1"
+        },
+        {
+          "type": "Behavior",
+          "config": {
+            "behaviorName": "BallBehavior",
+            "propertyValues": {}
+          },
+          "id": "2"
         }
       ],
       "position": {
@@ -156,10 +181,35 @@
                 "shaderAssetId": null
               },
               "id": "0"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.2,
+                "height": 1,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "Paddle1Behavior",
+                "propertyValues": {}
+              },
+              "id": "3"
             }
           ],
           "position": {
-            "x": -3.6,
+            "x": -3.7,
             "y": 0,
             "z": 4
           },
@@ -263,10 +313,35 @@
                 "shaderAssetId": null
               },
               "id": "0"
+            },
+            {
+              "type": "ArcadeBody2D",
+              "config": {
+                "type": "box",
+                "movable": true,
+                "width": 0.2,
+                "height": 1,
+                "offset": {
+                  "x": 0,
+                  "y": 0
+                },
+                "tileMapAssetId": null,
+                "tileSetPropertyName": null,
+                "layersIndex": null
+              },
+              "id": "1"
+            },
+            {
+              "type": "Behavior",
+              "config": {
+                "behaviorName": "Paddle2Behavior",
+                "propertyValues": {}
+              },
+              "id": "2"
             }
           ],
           "position": {
-            "x": 3.6,
+            "x": 3.7,
             "y": 0,
             "z": 4
           },

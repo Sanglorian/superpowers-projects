@@ -1,5 +1,44 @@
 [
   {
+    "id": "20",
+    "name": "Menu",
+    "type": "scene"
+  },
+  {
+    "id": "22",
+    "name": "MenuSprites",
+    "type": null,
+    "children": [
+      {
+        "id": "25",
+        "name": "title",
+        "type": "sprite"
+      },
+      {
+        "id": "26",
+        "name": "starton",
+        "type": "sprite"
+      },
+      {
+        "id": "27",
+        "name": "startoff",
+        "type": "sprite"
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "MenuScripts",
+    "type": null,
+    "children": [
+      {
+        "id": "28",
+        "name": "Button",
+        "type": "script"
+      }
+    ]
+  },
+  {
     "id": "2",
     "name": "Game",
     "type": "scene"
@@ -36,11 +75,6 @@
     "name": "GameScripts",
     "type": null,
     "children": [
-      {
-        "id": "15",
-        "name": "Global",
-        "type": "script"
-      },
       {
         "id": "14",
         "name": "Ball",

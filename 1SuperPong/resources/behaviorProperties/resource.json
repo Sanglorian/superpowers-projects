@@ -1,0 +1,56 @@
+{
+  "behaviors": {
+    "BallBehavior": {
+      "scriptId": "14",
+      "line": 2,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        },
+        {
+          "name": "dx",
+          "type": "number"
+        },
+        {
+          "name": "dy",
+          "type": "number"
+        }
+      ]
+    },
+    "Paddle1Behavior": {
+      "scriptId": "16",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        }
+      ]
+    },
+    "Paddle2Behavior": {
+      "scriptId": "16",
+      "line": 26,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "speed",
+          "type": "number"
+        }
+      ]
+    },
+    "ButtonBehavior": {
+      "scriptId": "28",
+      "line": 3,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "isHover",
+          "type": "boolean"
+        }
+      ]
+    }
+  }
+}
