@@ -148,7 +148,7 @@
           "type": "TextRenderer",
           "config": {
             "fontAssetId": "8",
-            "text": "Player 1\nZ / S",
+            "text": "Player 1\nW / S",
             "alignment": "center",
             "size": 32,
             "color": "f14735",
