@@ -1,0 +1,16 @@
+{
+  "behaviors": {
+    "PlayerBehavior": {
+      "scriptId": "4",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "ScreenBehavior": {
+      "scriptId": "4",
+      "line": 99,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
+}

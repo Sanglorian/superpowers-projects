@@ -1,0 +1,46 @@
+[
+  {
+    "id": "0",
+    "name": "Game",
+    "type": "scene"
+  },
+  {
+    "id": "1",
+    "name": "Sprites",
+    "type": null,
+    "children": [
+      {
+        "id": "5",
+        "name": "Symbols",
+        "type": "sprite"
+      },
+      {
+        "id": "6",
+        "name": "Screens",
+        "type": "sprite"
+      },
+      {
+        "id": "7",
+        "name": "Board",
+        "type": "sprite"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Scripts",
+    "type": null,
+    "children": [
+      {
+        "id": "3",
+        "name": "Global",
+        "type": "script"
+      },
+      {
+        "id": "4",
+        "name": "Player",
+        "type": "script"
+      }
+    ]
+  }
+]
