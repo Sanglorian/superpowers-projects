@@ -1,0 +1,132 @@
+[
+  {
+    "id": "0",
+    "name": "Game",
+    "type": "scene"
+  },
+  {
+    "id": "1",
+    "name": "Sprites",
+    "type": null,
+    "children": [
+      {
+        "id": "5",
+        "name": "Character",
+        "type": "sprite"
+      },
+      {
+        "id": "6",
+        "name": "Next",
+        "type": "sprite"
+      },
+      {
+        "id": "7",
+        "name": "Reset",
+        "type": "sprite"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Scripts",
+    "type": null,
+    "children": [
+      {
+        "id": "9",
+        "name": "Main",
+        "type": "script"
+      },
+      {
+        "id": "10",
+        "name": "Player",
+        "type": "script"
+      },
+      {
+        "id": "11",
+        "name": "Level",
+        "type": "script"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Levels",
+    "type": null,
+    "children": [
+      {
+        "id": "20",
+        "name": "Tiles",
+        "type": "tileSet"
+      },
+      {
+        "id": "13",
+        "name": "LevelTemplate",
+        "type": "tileMap"
+      },
+      {
+        "id": "25",
+        "name": "Level1",
+        "type": "tileMap"
+      },
+      {
+        "id": "26",
+        "name": "Level2",
+        "type": "tileMap"
+      },
+      {
+        "id": "27",
+        "name": "Level3",
+        "type": "tileMap"
+      }
+    ]
+  },
+  {
+    "id": "14",
+    "name": "Sounds",
+    "type": null,
+    "children": [
+      {
+        "id": "15",
+        "name": "Push",
+        "type": "sound"
+      },
+      {
+        "id": "16",
+        "name": "Blocked",
+        "type": "sound"
+      },
+      {
+        "id": "19",
+        "name": "EndSound",
+        "type": "sound"
+      },
+      {
+        "id": "17",
+        "name": "GameMusic",
+        "type": "sound"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Victory",
+    "type": null,
+    "children": [
+      {
+        "id": "3",
+        "name": "Scene",
+        "type": "scene"
+      },
+      {
+        "id": "4",
+        "name": "Screen",
+        "type": "sprite"
+      },
+      {
+        "id": "18",
+        "name": "EndMusic",
+        "type": "sound"
+      }
+    ]
+  }
+]
