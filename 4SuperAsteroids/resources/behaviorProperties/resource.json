@@ -1,0 +1,62 @@
+{
+  "behaviors": {
+    "GameBehavior": {
+      "scriptId": "8",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "timer",
+          "type": "number"
+        }
+      ]
+    },
+    "MenuBehavior": {
+      "scriptId": "12",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "BackgroundBehavior": {
+      "scriptId": "24",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "ShipBehavior": {
+      "scriptId": "26",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "AlienBehavior": {
+      "scriptId": "52",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "AsteroidBehavior": {
+      "scriptId": "63",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": [
+        {
+          "name": "sizeClass",
+          "type": "string"
+        }
+      ]
+    },
+    "ShipMissileBehavior": {
+      "scriptId": "32",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    },
+    "AlienMissileBehavior": {
+      "scriptId": "60",
+      "line": 0,
+      "parentBehavior": null,
+      "properties": []
+    }
+  }
+}

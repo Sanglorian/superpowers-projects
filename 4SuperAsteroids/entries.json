@@ -1,0 +1,416 @@
+[
+  {
+    "id": "9",
+    "name": "Global",
+    "type": "script"
+  },
+  {
+    "id": "0",
+    "name": "Game",
+    "type": null,
+    "children": [
+      {
+        "id": "10",
+        "name": "Scene",
+        "type": "scene"
+      },
+      {
+        "id": "8",
+        "name": "Game",
+        "type": "script"
+      }
+    ]
+  },
+  {
+    "id": "1",
+    "name": "Menu",
+    "type": null,
+    "children": [
+      {
+        "id": "11",
+        "name": "Scene",
+        "type": "scene"
+      },
+      {
+        "id": "12",
+        "name": "Menu",
+        "type": "script"
+      },
+      {
+        "id": "13",
+        "name": "Screens",
+        "type": null,
+        "children": [
+          {
+            "id": "14",
+            "name": "Main",
+            "type": null,
+            "children": [
+              {
+                "id": "19",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "15",
+            "name": "Asteroids",
+            "type": null,
+            "children": [
+              {
+                "id": "20",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "16",
+            "name": "Spacewar",
+            "type": null,
+            "children": [
+              {
+                "id": "21",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "17",
+            "name": "GameOver",
+            "type": null,
+            "children": [
+              {
+                "id": "22",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "18",
+        "name": "Button",
+        "type": null,
+        "children": [
+          {
+            "id": "23",
+            "name": "Sprite",
+            "type": "sprite"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Background",
+    "type": null,
+    "children": [
+      {
+        "id": "24",
+        "name": "Background",
+        "type": "script"
+      },
+      {
+        "id": "25",
+        "name": "Sprite",
+        "type": "sprite"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Ship",
+    "type": null,
+    "children": [
+      {
+        "id": "26",
+        "name": "Ship",
+        "type": "script"
+      },
+      {
+        "id": "27",
+        "name": "Missile",
+        "type": null,
+        "children": [
+          {
+            "id": "32",
+            "name": "Missile",
+            "type": "script"
+          }
+        ]
+      },
+      {
+        "id": "28",
+        "name": "Speed",
+        "type": null,
+        "children": [
+          {
+            "id": "33",
+            "name": "Sprite",
+            "type": "sprite"
+          }
+        ]
+      },
+      {
+        "id": "30",
+        "name": "0",
+        "type": null,
+        "children": [
+          {
+            "id": "36",
+            "name": "Model",
+            "type": "model"
+          },
+          {
+            "id": "34",
+            "name": "Prefab",
+            "type": "scene"
+          },
+          {
+            "id": "38",
+            "name": "Life",
+            "type": null,
+            "children": [
+              {
+                "id": "41",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "39",
+            "name": "Missile",
+            "type": null,
+            "children": [
+              {
+                "id": "42",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "43",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "40",
+            "name": "Explosion",
+            "type": null,
+            "children": [
+              {
+                "id": "44",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "31",
+        "name": "1",
+        "type": null,
+        "children": [
+          {
+            "id": "37",
+            "name": "Model",
+            "type": "model"
+          },
+          {
+            "id": "35",
+            "name": "Prefab",
+            "type": "scene"
+          },
+          {
+            "id": "45",
+            "name": "Life",
+            "type": null,
+            "children": [
+              {
+                "id": "48",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "46",
+            "name": "Missile",
+            "type": null,
+            "children": [
+              {
+                "id": "49",
+                "name": "Prefab",
+                "type": "scene"
+              },
+              {
+                "id": "50",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          },
+          {
+            "id": "47",
+            "name": "Explosion",
+            "type": null,
+            "children": [
+              {
+                "id": "51",
+                "name": "Sprite",
+                "type": "sprite"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Alien",
+    "type": null,
+    "children": [
+      {
+        "id": "52",
+        "name": "Alien",
+        "type": "script"
+      },
+      {
+        "id": "53",
+        "name": "Model",
+        "type": "model"
+      },
+      {
+        "id": "54",
+        "name": "Prefab",
+        "type": "scene"
+      },
+      {
+        "id": "55",
+        "name": "Missile",
+        "type": null,
+        "children": [
+          {
+            "id": "60",
+            "name": "Missile",
+            "type": "script"
+          },
+          {
+            "id": "61",
+            "name": "Prefab",
+            "type": "scene"
+          },
+          {
+            "id": "62",
+            "name": "Sprite",
+            "type": "sprite"
+          }
+        ]
+      },
+      {
+        "id": "56",
+        "name": "Life",
+        "type": null,
+        "children": [
+          {
+            "id": "58",
+            "name": "Sprite",
+            "type": "sprite"
+          }
+        ]
+      },
+      {
+        "id": "57",
+        "name": "Explosion",
+        "type": null,
+        "children": [
+          {
+            "id": "59",
+            "name": "Sprite",
+            "type": "sprite"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Asteroid",
+    "type": null,
+    "children": [
+      {
+        "id": "63",
+        "name": "Asteroid",
+        "type": "script"
+      },
+      {
+        "id": "64",
+        "name": "Model",
+        "type": "model"
+      },
+      {
+        "id": "65",
+        "name": "Prefab",
+        "type": "scene"
+      },
+      {
+        "id": "66",
+        "name": "Explosion",
+        "type": null,
+        "children": [
+          {
+            "id": "67",
+            "name": "Sprite",
+            "type": "sprite"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Sounds",
+    "type": null,
+    "children": [
+      {
+        "id": "68",
+        "name": "music",
+        "type": "sound"
+      },
+      {
+        "id": "74",
+        "name": "shipShot",
+        "type": "sound"
+      },
+      {
+        "id": "70",
+        "name": "alienShot",
+        "type": "sound"
+      },
+      {
+        "id": "71",
+        "name": "explosion",
+        "type": "sound"
+      },
+      {
+        "id": "72",
+        "name": "shotContact",
+        "type": "sound"
+      }
+    ]
+  },
+  {
+    "id": "73",
+    "name": "Font",
+    "type": "font"
+  }
+]
