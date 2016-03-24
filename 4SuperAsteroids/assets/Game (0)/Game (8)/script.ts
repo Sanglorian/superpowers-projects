@@ -31,7 +31,8 @@ class GameBehavior extends Sup.Behavior {
         if(Alien.spawnTimer > 0){
           Alien.spawnTimer--;
         // If spawnTimer finished, spawn an alien ship
-        }else{
+        }
+        else {
           Game.spawnAlien();
         }
       }
@@ -59,11 +60,41 @@ class GameBehavior extends Sup.Behavior {
           Game.updateTimer(this.timer);
         }
       // If timer at 0, then the game is finished.
-      } else {
+      }
+      else {
         // The game is over
         Game.gameOver();
       }
     }
+    
+    // Check if score need to be updated with the HUD
+    if (Game.checkScoreHUD) {
+      // If the game is spacewar, we update the two ship scores
+      if (Game.nameIndex == 1) {
+        let player1Score = Sup.getActor("Ship1").getBehavior(ShipBehavior).score;
+        let player2Score = Sup.getActor("Ship2").getBehavior(ShipBehavior).score;
+        Game.updateHUDScore(player1Score, player2Score);
+      }
+      // Else the game is asteroids, we update the ship 1 score
+      else {
+        let playerScore = Sup.getActor("Ship1").getBehavior(ShipBehavior).score;
+        Game.updateHUDScore(playerScore);
+      }
+    }
+       
+    // Check if lifes need to be updated with the HUD
+    if (Game.checkLifeHUD) {
+      if (Game.nameIndex === 0) {
+        let playerLife = Sup.getActor("Ship1").getBehavior(ShipBehavior).lifes;
+        let alienLife = Alien.lifes;
+        Game.updateHUDLife(playerLife, alienLife);
+      }
+      if (Game.nameIndex === 1) {
+        let player1Life = Sup.getActor("Ship1").getBehavior(ShipBehavior).lifes;
+        let player2Life = Sup.getActor("Ship2").getBehavior(ShipBehavior).lifes;
+        Game.updateHUDLife(player1Life, player2Life);
+      }
+    } 
   }
 }
 Sup.registerBehavior(GameBehavior);

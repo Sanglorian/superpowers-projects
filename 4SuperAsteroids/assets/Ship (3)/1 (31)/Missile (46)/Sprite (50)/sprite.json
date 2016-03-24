@@ -22,7 +22,7 @@
     {
       "id": "0",
       "name": "explode",
-      "startFrameIndex": 0,
+      "startFrameIndex": 1,
       "endFrameIndex": 3,
       "speed": 1
     }

@@ -27,13 +27,91 @@
       "scriptId": "26",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "index",
+          "type": "number"
+        },
+        {
+          "name": "amplitude",
+          "type": "number"
+        },
+        {
+          "name": "lifes",
+          "type": "number"
+        },
+        {
+          "name": "alive",
+          "type": "boolean"
+        },
+        {
+          "name": "score",
+          "type": "number"
+        },
+        {
+          "name": "spawnPosition",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "linearVelocity",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "angularVelocity",
+          "type": "number"
+        },
+        {
+          "name": "angle",
+          "type": "number"
+        },
+        {
+          "name": "shootCooldown",
+          "type": "number"
+        },
+        {
+          "name": "spawnCooldown",
+          "type": "number"
+        },
+        {
+          "name": "invincibilityCooldown",
+          "type": "number"
+        }
+      ]
     },
     "AlienBehavior": {
       "scriptId": "52",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "size",
+          "type": "number"
+        },
+        {
+          "name": "amplitude",
+          "type": "number"
+        },
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "velocity",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "shootCooldown",
+          "type": "number"
+        },
+        {
+          "name": "deathTimer",
+          "type": "number"
+        }
+      ]
     },
     "AsteroidBehavior": {
       "scriptId": "63",
@@ -41,8 +119,40 @@
       "parentBehavior": null,
       "properties": [
         {
+          "name": "size",
+          "type": "number"
+        },
+        {
+          "name": "amplitude",
+          "type": "number"
+        },
+        {
           "name": "sizeClass",
           "type": "string"
+        },
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "velocity",
+          "type": "Sup.Math.Vector3"
+        },
+        {
+          "name": "linearSpeedX",
+          "type": "number"
+        },
+        {
+          "name": "linearSpeedY",
+          "type": "number"
+        },
+        {
+          "name": "rotationSpeed",
+          "type": "number"
+        },
+        {
+          "name": "deathTimer",
+          "type": "number"
         }
       ]
     },
@@ -50,13 +160,51 @@
       "scriptId": "32",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "shipIndex",
+          "type": "number"
+        },
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "velocity",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "angle",
+          "type": "number"
+        },
+        {
+          "name": "lifeTime",
+          "type": "number"
+        }
+      ]
     },
     "AlienMissileBehavior": {
       "scriptId": "60",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "position",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "velocity",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "target",
+          "type": "Sup.Math.Vector2"
+        },
+        {
+          "name": "angle",
+          "type": "number"
+        }
+      ]
     }
   }
 }
