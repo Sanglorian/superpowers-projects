@@ -66,6 +66,7 @@ class AlienBehavior extends Sup.Behavior {
     // Death setting
     // Set death if alien don't have lifes anymore
     if(Alien.lifes === 0){
+      Sup.Audio.playSound('Sounds/explosion');
       // Reset angles to default for the explosion sprite
       this.actor.setEulerAngles(0,0,0);
       // Set visible off the alien ship model
@@ -97,6 +98,7 @@ class AlienBehavior extends Sup.Behavior {
     }
     // If the timer is finished, shoot missile
     else {
+      Sup.Audio.playSound('Sounds/alienShot');
       this.shoot();
     }
     
@@ -114,6 +116,7 @@ class AlienBehavior extends Sup.Behavior {
     if(Ships.missiles[0].length > 0){
       // If the collision checking return true
       if (Game.checkCollisionMissile(this.actor, Ships.missiles[0], this.amplitude)) {
+        Sup.Audio.playSound('Sounds/shotContact');
         // Decrease Alien lifes by one
         Alien.lifes--
         // Flag true to check and update the life HUD in Game Script

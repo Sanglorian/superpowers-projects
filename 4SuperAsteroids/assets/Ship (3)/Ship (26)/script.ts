@@ -53,6 +53,7 @@ class ShipBehavior extends Sup.Behavior {
   }
 
   die() {
+    Sup.Audio.playSound('Sounds/explosion');
     // Decrease life of one
     this.lifes--;
     // Set false to alive status
@@ -72,7 +73,7 @@ class ShipBehavior extends Sup.Behavior {
         }
         // Else, this is ship 2 and it is a victory for ship 1
         else {
-          Sup.setTimeout(1000, function () { Game.gameOver() });
+          Sup.setTimeout(1000, function () { Game.gameOver("ship1") });
         }
       }
     }
@@ -95,6 +96,8 @@ class ShipBehavior extends Sup.Behavior {
     this.actor.getChild('Destruction').spriteRenderer.setAnimation("explode", false);
     // Reset speed movement on x and y axis to 0
     this.linearVelocity.set(0, 0);
+    // Reset angular movement to 0
+    this.angularVelocity = 0;
     // Reset angle to default for ship 1 or ship 2
     if (this.index === 0){
       this.angle = 1.6;
@@ -107,6 +110,10 @@ class ShipBehavior extends Sup.Behavior {
   spawn() {
     // The ship respawn to spawn position
     this.position = this.spawnPosition.clone();
+    // Set the new current position to the Ship actor
+    this.actor.setLocalPosition(this.position);
+    // Set the new angle to the Ship actor
+    this.actor.setLocalEulerZ(this.angle);
     // The ship model visibility to true
     this.actor.getChild('Model').setVisible(true);
     // Set timer for invincibility
@@ -191,6 +198,7 @@ class ShipBehavior extends Sup.Behavior {
     if (!this.shootCooldown) {
       // If the shoot key is pressed
       if(Sup.Input.wasKeyJustPressed(Ships.commands[this.index].shoot)){
+        Sup.Audio.playSound('Sounds/shipShot');
         // Call the shoot method
         this.shoot();
       }

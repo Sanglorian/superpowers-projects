@@ -45,6 +45,9 @@ namespace Game{
   
   // Start the game
   export function start(){
+    // Load Game Scene
+    Sup.loadScene("Game/Scene");
+    
     // Set new asteroids list
     Asteroids.list = [];
     // Set asteroids number to 0
@@ -54,6 +57,7 @@ namespace Game{
     Ships.missiles = [[], []];
     // Set new Alien.missiles list
     Alien.missiles = [];
+    
     
     // get the Camera actor the the game Scene
     let screen = Sup.getActor("Camera").camera;
@@ -340,9 +344,46 @@ namespace Game{
     Game.checkLifeHUD = false;
   }
   
-  // Close game scene and return menu game over screen
-  export function gameOver(winner?: string){
-    Sup.log("Game Over");
+  // Load the gameOver screen and display score
+  export function gameOver(winner: string){
+    // Initialize variables
+    let score1: number;
+    let score2: number;
+    // Store the ship1 score before to leave the scene
+    score1 = Sup.getActor("Ship1").getBehavior(ShipBehavior).score;
+    // If the game is spacewar, stock also the Ship2 score
+    if (nameIndex === 1) {
+      score2 = Sup.getActor("Ship2").getBehavior(ShipBehavior).score;
+    }
+    // Close game scene and load menu scene
+    Sup.loadScene("Menu/Scene");
+    // Set game over Screen
+    Sup.getActor("Menu").getBehavior(MenuBehavior).setScreen(Menu.screens.gameover);
+    // Get in a variable gameOverScreen the gameover screen actor
+    let gameOverScreen = Sup.getActor("Screens").getChild(Menu.screens.gameover.toString());
+    // Set the Sprite from the actor to display the winner frame
+    gameOverScreen.spriteRenderer.setAnimation(winner);
+    // Display Score
+    // Set title visible false
+    Sup.getActor("Title").setVisible(false);
+    // Get the Score actor in a variable
+    let score: Sup.Actor = Sup.getActor("Score");
+    // Set the Score actor visible
+    score.setVisible(true);
+    // Set the score text to the current score of ship1
+    score.getChild("Ship1").textRenderer.setText("Ship1:"+score1);
+    // If the game is spacewar
+    if (nameIndex === 1) {
+      // Set visible true the score of Ship2
+      score.getChild("Ship2").setVisible(true);
+      // Set the score text to the current score of ship2
+      score.getChild("Ship2").textRenderer.setText("Ship2:"+score2);
+      
+    }
+    else {
+      // Set visible false the ship2 score
+      score.getChild("Ship2").setVisible(false);
+    }
   }
 }
   
@@ -351,10 +392,10 @@ namespace Menu{
   
   // Different menu screen index
   export const screens = {
-      main : 0,
-      asteroids : 1,
-      spacewar : 2,
-      gameover : 3,
+      main : "Main",
+      asteroids : "Asteroids",
+      spacewar : "Spacewar",
+      gameover : "GameOver",
      }
   
   // Game names index
@@ -408,7 +449,7 @@ namespace Ships{
   // Commands for each ship by index
   export const commands = [
     {left:"LEFT", right:"RIGHT", forward:"UP", shoot:"CONTROL", boost:"SHIFT"}, // commands[0]
-    {left:"A", right:"D", forward:"W", shoot:"SPACE", boost:"N"} // commands[1]
+    {left:"A", right:"D", forward:"W", shoot:"SPACE", boost:"C"} // commands[1]
   ];
   
   // Missiles list for each ship by index
@@ -436,7 +477,7 @@ namespace Alien{
   // Different alien sizes
   export const sizes: number[] = [1.7, 1.3, 1];
   // Different collision amplitude related to size
-  export const amplitudes: number[] = [2, 1.5, 1.2];
+  export const amplitudes: number[] = [2.5, 2.2, 2];
   
   // Linear and rotation speed of alien ship
   export let linearSpeed: number = 0.05;

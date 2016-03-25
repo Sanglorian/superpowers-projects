@@ -349,7 +349,7 @@
               "position": {
                 "x": 0,
                 "y": 0,
-                "z": 0
+                "z": 1
               },
               "orientation": {
                 "x": 0,
@@ -456,7 +456,7 @@
               "position": {
                 "x": 0,
                 "y": 0,
-                "z": 0
+                "z": 1
               },
               "orientation": {
                 "x": 0,
@@ -616,6 +616,108 @@
         "z": 1
       },
       "visible": true,
+      "layer": 0,
+      "prefab": null
+    },
+    {
+      "id": "19",
+      "name": "Score",
+      "children": [
+        {
+          "id": "20",
+          "name": "Ship1",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "fontAssetId": "73",
+                "text": "Ship1:9999",
+                "alignment": "center",
+                "size": null,
+                "color": "6f92b9",
+                "verticalAlignment": "center"
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 5,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 2,
+            "y": 2,
+            "z": 2
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        },
+        {
+          "id": "22",
+          "name": "Ship2",
+          "children": [],
+          "components": [
+            {
+              "type": "TextRenderer",
+              "config": {
+                "fontAssetId": "73",
+                "text": "Ship2:9999",
+                "alignment": "center",
+                "size": null,
+                "color": "ef696c",
+                "verticalAlignment": "center"
+              },
+              "id": "0"
+            }
+          ],
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "orientation": {
+            "x": 0,
+            "y": 0,
+            "z": 0,
+            "w": 1
+          },
+          "scale": {
+            "x": 2,
+            "y": 2,
+            "z": 2
+          },
+          "visible": true,
+          "layer": 0,
+          "prefab": null
+        }
+      ],
+      "components": [],
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 90
+      },
+      "orientation": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "visible": false,
       "layer": 0,
       "prefab": null
     }

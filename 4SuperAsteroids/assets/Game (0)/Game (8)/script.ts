@@ -1,9 +1,7 @@
 class GameBehavior extends Sup.Behavior {
   timer: number;
 
-  awake() {
-    Game.start() // Temporary Function Call
-    
+  start() {    
     // When GameBehavior awake, if game is Asteroids then spawn asteroids and alien
     if(Game.nameIndex === 0){
       // Give to this game instance, the starting timer
@@ -62,8 +60,8 @@ class GameBehavior extends Sup.Behavior {
       // If timer at 0, then the game is finished.
       }
       else {
-        // The game is over
-        Game.gameOver();
+        // The game is over, return ship1 score
+        Game.gameOver("ship1");
       }
     }
     
@@ -94,7 +92,17 @@ class GameBehavior extends Sup.Behavior {
         let player2Life = Sup.getActor("Ship2").getBehavior(ShipBehavior).lifes;
         Game.updateHUDLife(player1Life, player2Life);
       }
-    } 
+    }
+    
+    // Restart game when key (R) is pressed, call Game.start function which reload the game scene
+    if (Sup.Input.wasKeyJustPressed("R")) {
+      Game.start();
+    }
+    
+    // Leave Game when key (ESCAPE) is pressed, load the menu scene
+    if (Sup.Input.wasKeyJustPressed("ESCAPE")) {
+      Sup.loadScene("Menu/Scene");
+    }
   }
 }
 Sup.registerBehavior(GameBehavior);

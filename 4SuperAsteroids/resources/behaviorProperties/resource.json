@@ -15,13 +15,27 @@
       "scriptId": "12",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "screen",
+          "type": "string"
+        }
+      ]
     },
     "BackgroundBehavior": {
       "scriptId": "24",
       "line": 0,
       "parentBehavior": null,
-      "properties": []
+      "properties": [
+        {
+          "name": "position",
+          "type": "number"
+        },
+        {
+          "name": "speed",
+          "type": "number"
+        }
+      ]
     },
     "ShipBehavior": {
       "scriptId": "26",

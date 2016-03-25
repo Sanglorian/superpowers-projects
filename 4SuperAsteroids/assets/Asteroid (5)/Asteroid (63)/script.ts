@@ -46,6 +46,7 @@ class AsteroidBehavior extends Sup.Behavior {
   }
 
   die() {
+    Sup.Audio.playSound('Sounds/explosion');
     // Reset angles to default for the explosion sprite
     this.actor.setEulerAngles(0,0,0);
     // Set visible off the asteroid model
